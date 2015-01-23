@@ -67,6 +67,10 @@ public class HeroCamera : MonoBehaviour {
         moveTarget = new Vector3(0, 0, 4);
     }
 
+    public bool IsStop() {
+        return firstMovementPartFinished && rotateMovementPartFinished && secondMovementPartFinished;
+    }
+
 }
 
 
