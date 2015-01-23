@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class LabyrinthMoveCamera : MonoBehaviour {
+public class HeroCamera : MonoBehaviour {
 
     public float rotateSpeed = 4.0f;
     public float moveSpeed = 4.0f;
@@ -13,10 +13,6 @@ public class LabyrinthMoveCamera : MonoBehaviour {
     private float rotationTarget;
     
     void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            MoveToNextPoint();
-        }
-
         if (!firstMovementPartFinished) {
             firstMovementPartFinished = !Move();
             if (firstMovementPartFinished) {
