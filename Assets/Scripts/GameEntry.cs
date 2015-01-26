@@ -23,11 +23,8 @@ public class GameEntry : MonoBehaviour {
             }
 	    }
 
-        // TODO Delete this code after testing drawing monsters
-        if (heroCamera.IsStop()) {
-            if (Input.GetMouseButtonDown(0)) {
-                currentMonsterPack = null;
-            }  
+	    if (heroCamera.IsStop()) {
+	        // TODO atack
 	    }
 	}
 }

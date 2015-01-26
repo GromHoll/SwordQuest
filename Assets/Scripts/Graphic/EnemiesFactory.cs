@@ -50,6 +50,8 @@ public class EnemiesFactory : MonoBehaviour {
         spawnPosition    += heroCamera.transform.right * shift.z;
         
         var monsterObj = (GameObject) Instantiate(prefab, spawnPosition, Quaternion.identity);
+        var controller = monsterObj.GetComponent<EnemyController>();
+        controller.Monster = monster;
 
         var eulerAngles = monsterObj.transform.eulerAngles;
         eulerAngles.y = heroCamera.transform.eulerAngles.y - 90;

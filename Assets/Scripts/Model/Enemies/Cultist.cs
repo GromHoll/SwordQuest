@@ -1,3 +1,5 @@
-﻿public class Cultist : Monster
-{
+﻿public class Cultist : Monster {
+
+    public Cultist() : base(50) {}
+
 }
